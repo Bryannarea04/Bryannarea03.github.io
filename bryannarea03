@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Tillana" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font-family: 'Concert One', cursive;
+	  font-size: 25px;
+      line-height: 1.8;
+      color: #F0F0F0;
+	  background-color: #4C6D99;
+  }
+
+  img {
+	  width: 300px;
+	  length: 200px;
+	  margin: 40px 54px 54px 0px;
+	  
+  }
+  h1 {
+	  font-family: 'Kavoon', cursive;
+      font-size: 34px;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+	  color: #DAA520;
+  }
+  h3 {
+	  color: black;
+  }
+  h4 {
+	  font-family: 'Tillana', cursive;
+      font-size: 25px;
+      line-height: 1.375em;
+      color: #C0C0C0;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  p {
+	  color: black;
+	  font-family: 'Mina', sans-serif;
+  }
+  
+  .jumbotron {
+      background-color: #2B4261;
+      color: #C0C0C0;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+	  
+  }
+  .bg-grey {
+      background-color: #2B4261;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 700px;
+      margin-bottom: 10px;
+  }
+
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #DAA520; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+	  
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .img-circle {
+      border: 7px #DAA520;
+      border-radius: 20px;
+  	
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #DAA520;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #DAA520 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+	  
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #DAA520;
+      color: #fff;
+  }
+  .panel-body {
+	  color: black;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #DAA520;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Josefin Sans, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Patrick</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT PATRICK</a></li>
+        <li><a href="#services">PAT'S FRIENDS</a></li>
+		<li><a href="#fghh">THE PATRICKS</a></li>
+        <li><a href="#pricing">PAT'S COMBOS</a></li>
+        <li><a href="#contact">CALL US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Patrick</h1> 
+  <p>We Sell Patrick</p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Enter Your Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Order</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Patrick</h2><br>
+      <h4>Patrick Star is SpongeBob's best friend as well as one of his neighbors. He is a naive pink sea story. He lives under a brown rock in the underwater city of Bikini Bottom. SpongeBob and Squidward are his neighbors. Both Patrick and SpongeBob bother Squidward, though they do not like to do it and they do it unknowingly and have good intentions</h4><br>
+      <p>Patrick's portrayal is pleasant, overweight, lazy, unmannerly, naive, and generally ignorant. He lives under a rock on 120 Conch Street. Unlike most of the other main characters of the series. Patrick does not have a nose. Patrick has trouble with even the most rudimentary tasks and displays little common sense or intelligence. His memory can be appalling and he can forget how to do the most instinctual of actions, such as eating or how to fall over. He once forgot that he ate a chocolate bar the second after he ate it in.</p>
+      <br><button class="btn btn-default btn-lg">Order A Patrick</button>
+    </div>
+    <div class="col-sm-4">
+		<img src="http://clipart-library.com/image_gallery/612604.gif">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://91b6be3bd2294a24b7b5-da4c182123f5956a3d22aa43eb816232.ssl.cf1.rackcdn.com/contentItem-8699291-76360861-jiw52779sog7b-or.png"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission is too deliever a Patrick to your door. No matter where you are you need a Patrick now!</h4><br>
+      <p><strong>VISION:</strong> Our vision is too help spread the word about Patrick. Everyone should know who he is. He is the best person alive and should be heard by everyone in the world.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container text-center">
+  <h3>Pats Friends</h3>
+  <p><em>We Are Pat's Friends!</em></p>
+  <p>I am a yellow sponge with arms and legs with buckteeth named Spongebob. I am Patricks best friend. I always hangout with him. I am a squireel that is from texas. I love texas. I am also Pat's friend. We hangout a lot too and we are also great friends. Meow meow meow meow meow meow meow meow meow meow meow meow meow!</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>SpongeBob</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="https://vignette.wikia.nocookie.net/spongebob/images/1/19/Thumbs_Up.png/revision/latest/scale-to-width-down/402?cb=20140824163822" class="img-circle person" alt="SpongeBob" width="500" height="400">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Sponge</p>
+        <p>Loves Krabby Patties</p>
+        <p>Loves To Work</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Sandy</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="https://vignette.wikia.nocookie.net/maafanficuniverse/images/2/2b/200px-Sandy_Cheeks.png/revision/latest?cb=20150224195732" class="img-circle" alt="Random Name" width="500" height="400">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Squirrel</p>
+        <p>Loves Karate</p>
+        <p>Likes Nuts</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Gary</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="https://vignette.wikia.nocookie.net/parody/images/a/a8/Gary_spongebob_squarepants.png/revision/latest?cb=20150821202003" class="img-circle person" alt="Random Name" width="500" height="400" border: "white">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Snail</p>
+        <p>Loves Saying Meow</p>
+        <p>Likes To Sleep</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div id="fghh" class="container-fluid text-center bg-grey">
+  <h2>Pat's Freinds</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://vignette.wikia.nocookie.net/spongebob/images/1/18/Weird_Patrick.png/revision/latest?cb=20140824164418">
+        <p><strong>Happy Patrick</strong></p>
+        <p>He is happy</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://agarioskins.com/submitted/useruploads/Patrick.png" width="400" height="300">
+        <p><strong>Dumb Patrick</strong></p>
+        <p>We made him dumb</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://files.gamebanana.com/img/ico/sprays/patrick.png">
+        <p><strong>Patrick With Icecream</strong></p>
+        <p>Yes, he is eating icecream</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"I have Never Been This Happy Ever!"<br><span>SpongeBob SquarePants</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Amazing Site To Order A Patrick"<br><span>Sandy Cheeks</span></h4>
+      </div>
+      <div class="item">
+        <h4>"I Like Money"<br><span>Mr.Krabs</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pat's Combos</h2>
+    <h4>Choose A Combo You Would Likes</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pat's Combo</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1</strong> Patrick</p>
+          <p><strong>1</strong> Pet Rock</p>
+          <p><strong>1</strong> Sand Cereal</p>
+          <p><strong>2</strong> Krabby Patties</p>
+          <p><strong>5</strong> Coins</p>
+		  <p><strong>1</strong> Sand Bed</p>
+		  
+        </div>
+        <div class="panel-footer">
+          <h3>$20</h3>
+          <h4></h4>
+          <button class="btn btn-lg">Order It</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pat And Friends</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1</strong> Patrick</p>
+          <p><strong>1</strong> Spongebob</p>
+          <p><strong>1</strong> Sandy</p>
+		  <p><strong>10</strong> Krabby Patty</p>
+		  <p><strong>5</strong> Coins</p>
+		  <p><strong>1</strong> Pinapple House</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$40</h3>
+          <h4></h4>
+          <button class="btn btn-lg">Order It</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Big Pat Combo</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1</strong> Patrick</p>
+          <p><strong>1</strong> Mr.Krabs</p>
+          <p><strong>1</strong> Spongebob</p>
+          <p><strong>1</strong> Squidward</p>
+          <p><strong>1</strong> Sandy</p>
+		  <p><strong>25</strong> Krabby Patties</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$60</h3>
+          <h4></h4>
+          <button class="btn btn-lg">Order It</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact Us And We Get Your Patrick To You Within The Next 24 Hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Bikini Bottom, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1(323)-436-8654</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> patricksell@patrickmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+	  <form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+	  <input name="skip_WhereToSend" type="hidden" value="bryannarea7@gmail.com" />
+	  <input name="skip_SnapHostID" type="hidden" value="3WBAQMKXSZ9T" />
+	  <input name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
+	  <input name="skip_Subject" type="hidden" value="Contact Us Form" />
+	  <input name="skip_ShowUsersIp" type="hidden" value="1" />
+	  <input name="skip_SendCopyToUser" type="hidden" value="1" />
+	  <script type="text/javascript">
+	  function ValidateForm(frm) {
+	  if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+	  if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+	  if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+	  if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
+	  if (frm.skip_CaptchaCode.value == "") {alert('Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
+	  return true; }
+	  function ReloadCaptchaImage(captchaImageId) {
+	  var obj = document.getElementById(captchaImageId);
+	  var src = '' + obj.src;
+	  obj.src = '';
+	  var date = new Date();
+	  var pos = src.indexOf('&rad=');
+	  if (pos >= 0) { src = src.substr(0, pos); }
+	  obj.src = src + '&rad=' + date.getTime();
+	  return false; }
+	  </script>
+	  <table border="0" cellpadding="5" cellspacing="0" width="600">
+	  <tr>
+	  <td><b>Name*:</b></td>
+	  <td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
+	  </tr><tr>
+	  <td><b>Phone number:</b></td>
+	  <td><input name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
+	  </tr><tr>
+	  <td><b>Email address*:</b></td>
+	  <td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
+	  </tr><tr>
+	  <td><b>Comments and questions*:</b></td>
+	  <td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
+	  </tr><tr>
+	  <td colspan="2" align="center"> <br />
+	  <table border="0" cellpadding="0" cellspacing="0">
+	  <tr><td colspan="2" style="padding-bottom:18px;">
+	  <!-- Please check our ProCaptcha service which is ad-free:
+	  http://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+	  <a href="http://www.snaphost.com/captcha/" alt="captcha validation" title="captcha validation">
+	  captcha validation</a></td></tr>
+	  <tr valign="top"><td> <i>Enter web form code*:</i>
+	  <input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
+	  </td><td>
+	  <a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
+	  style="margin-left:20px;"
+	  src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=3WBAQMKXSZ9T&ImgType=2" /></a><br />
+	  <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
+	  </table> <br />
+	  * - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	  <input name="skip_Submit" type="submit" value="Submit" />
+	  </td></tr>
+	  </table><br />
+	  </form>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(23.660239, -108.374936);
+var mapProp = {center:myCenter, zoom:5, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHlljGXjYx525dQahHAMppYBefMr7EloY
+&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Patrick Made By Bryan</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
